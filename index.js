@@ -69,3 +69,9 @@ app.get("/vote", (req, res) => {
   app.get("/vote", (req, res) => {
   res.sendFile(path.join(__dirname, "form.html"));
 });
+  res.send("Đã nhận bình chọn");
+}); // đóng app.post (nếu cần)
+
+app.listen(3000, () => {
+    console.log("Server đang chạy trên cổng 3000");
+});
