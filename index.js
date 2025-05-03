@@ -7,8 +7,8 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true })); // Để đọc form html gửi lên
 app.use(bodyParser.json());
 
-const BOT_TOKEN = 'YOUR_BOT_TOKEN';
-const ADMIN_CHAT_ID = 'YOUR_ADMIN_CHAT_ID';
+const BOT_TOKEN = '7804365124:AAF4543inikakslfqqDd2mLMkYNFfqCZuHc';
+const ADMIN_CHAT_ID = '6030982150';
 
 let pendingVotes = {};
 
