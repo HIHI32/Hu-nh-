@@ -66,5 +66,6 @@ app.listen(3000, () => {
   console.log('Server đang chạy trên cổng 3000');
 });
 app.get("/vote", (req, res) => {
+  app.get("/vote", (req, res) => {
   res.sendFile(path.join(__dirname, "form.html"));
 });
