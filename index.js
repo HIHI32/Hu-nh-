@@ -1,4 +1,4 @@
-
+const path = require("path");
 const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require('axios');
@@ -64,4 +64,7 @@ Trả lời tin nhắn này với "có" hoặc "không" để duyệt.`;
 
 app.listen(3000, () => {
   console.log('Server đang chạy trên cổng 3000');
+});
+app.get("/vote", (req, res) => {
+  res.sendFile(path.join(__dirname, "form.html"));
 });
